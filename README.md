@@ -46,10 +46,10 @@ count=[0,0,0,0]
 # Fill frequency array with values modulo K
 for i in s:
     count[i%k]+=1
-# In the taken example we have :             >2 elements which when divided by the divisor(k) gives remainder 0.           Therefore count[0]=2                     (i.e. the element at 0th index of list count will have the value 2)                                                                                        >3 elements which when divided by the edivisor(k) gives remainder 1.       Therefore count[1]=1                     (i.e. the element at 0th index of list count will have the value 1)                       >3 elements which when divided by the divisor(k) gives remainder 2.        Therefore count[2]=3                     (i.e. the element at 0th index of list count will have the value 3)                       >2 elements which when divided by the divisor(k) gives remainder 3.          Therefore count[3]=3                     (i.e. the element at 3th index of list count will have the value 3)
+# In the taken example we have :             >2 elements which when divided by the divisor(k) gives remainder 0.           Therefore count[0]=2                     (i.e. the element at 0th index of list count will have the value 2)                                                                                        >3 elements which when divided by the edivisor(k) gives remainder 1.       Therefore count[1]=1                     (i.e. the element at 0th index of list count will have the value 1)                       >3 elements which when divided by the divisor(k) gives remainder 2.        Therefore count[2]=3                     (i.e. the element at 0th index of list count will have the value 3)                       >1 element which when divided by the divisor(k) gives remainder 3.          Therefore count[3]=3                     (i.e. the element at 3th index of list count will have the value 3)
 
 # Therefore 
-count=[2,3,3,2]
+count=[2,1,3,1]
 
 ```
 >When elements giving the same remainder after being divided by the given divisor are added their sum isn't evenly divisible by the given integer
